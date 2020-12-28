@@ -17,7 +17,7 @@ def q2
   array1 = %w[dog cat fish]
   array2 = %w[bird bat tiger]
   array1.<<(array2)
-  array1.flatten!
+  array1 + array2
   p array1
 end
 
@@ -101,10 +101,9 @@ def q11
 
   # 以下に回答を記載
   puts 'ユーザーの趣味一覧'
-  sports.flatten!
-  sports.uniq!
-  sports.each.with_index(1) do |value, index|
-    puts "No.#{index}:#{value}"
+  sports.flatten!.uniq!
+  sports.each.with_index(1) do |_sport, index|
+    puts "No.#{index}:#{_sport}"
   end
 end
 
