@@ -111,6 +111,8 @@ def q12
   data = { user: { name: 'satou', age: 33 } }
 
   # 以下に回答を記載
+  data.flatten!
+  puts params[:name]
 end
 
 def q13
