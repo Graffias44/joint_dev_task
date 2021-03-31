@@ -111,8 +111,7 @@ def q12
   data = { user: { name: 'satou', age: 33 } }
 
   # 以下に回答を記載
-  data.map {|hash| hash["name"]}
-
+      p data[:user][0]
 end
 
 def q13
@@ -120,8 +119,8 @@ def q13
   update_data = { age: 32, address: '沖縄' }
 
   # 以下に回答を記載
-  user_data.store("age", 32)
-  user_data.store("address", "沖縄") 
+  user_data.update( age:32 , address: "沖縄") 
+  p user_data
 end
 
 def q14
