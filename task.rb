@@ -135,16 +135,14 @@ def q15
   data2 = { name: 'yamada', hobby: 'baseball', role: 'normal' }
 
   # 以下に回答を記載
-  data3 = data3.new(data1(data2))
-  p data3
-  
-  array = data1.keys
-  p array
-
-  if array.include?(:age)
+  array1 = data1.keys
+  array2 = data2.keys
+ 
+  if array1.include?(:age)
     puts "OK"
-  elsif 
+    unless array2.include?(:age)
     puts "NG"
+    end
   end
 end
 
