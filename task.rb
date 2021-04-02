@@ -119,9 +119,7 @@ def q13
   update_data = { age: 32, address: '沖縄' }
 
   # 以下に回答を記載
-  def user_data( age: , address: )
-  end
-  user_data.update(age: 32, address: '沖縄')
+  user_data.update(update_data)
   puts user_data
 end
 
