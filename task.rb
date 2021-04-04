@@ -138,11 +138,11 @@ def q15
   array1 = data1.keys
   array2 = data2.keys
  
-  if array1.include?(:age)
+  if data1.include?(:age)
     puts "OK"
-    unless array2.include?(:age)
+  end
+  if data2.include?(:age)
     puts "NG"
-    end
   end
 end
 
