@@ -138,10 +138,11 @@ def q15
   array1 = data1.keys
   array2 = data2.keys
  
-  if data1.include?(:age)
+  case 
+  when data1.include?(:age) then
     puts "OK"
-  elsif data2.include?(:age)
-    puts "NG"
+  when data2.include?(:age) then
+    puts "NG"  
   end
   
 end
@@ -155,7 +156,7 @@ def q16
   ]
 
   # 以下に回答を記載
-  users.each do |user,i|
+  users.each do |user|
     puts "私の名前は#{user[:name]}です。年齢は#{user[:age]}歳です。"
   end
 end
