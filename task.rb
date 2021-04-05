@@ -140,10 +140,10 @@ def q15
  
   if data1.include?(:age)
     puts "OK"
-  end
-  if data2.include?(:age)
+  elsif data2.include?(:age)
     puts "NG"
   end
+  
 end
 
 def q16
@@ -155,8 +155,8 @@ def q16
   ]
 
   # 以下に回答を記載
-  users.each do |product,i|
-    puts "私の名前は#{product[:name]}です。年齢は#{product[:age]}歳です。"
+  users.each do |user,i|
+    puts "私の名前は#{user[:name]}です。年齢は#{user[:age]}歳です。"
   end
 end
 
